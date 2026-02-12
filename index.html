@@ -3,50 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planning Ramadan · ENO Sébikotane · Groupes 17–28</title>
+  <title>Planning Ramadan · ENO Sébikotane · Groupes 17–28 · Durées S4=3h / S5=5h</title>
   <!-- Google Font & Font Awesome 6 -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    /* --------------------------------
-       VARIABLES & RESET – ÉLÉGANCE
-    -------------------------------- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    /* ========== VARIABLES LUXE ========== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     :root {
       --nuit-profonde: #0b2f44;
       --teal-royal: #116466;
       --teal-lumiere: #2c7a7b;
-      --sable-dore: #d9b48f;
-      --corail-doux: #ffb38b;
       --blanc-casse: #fefefe;
-      --gris-lin: #f3f6f9;
       --gris-ardoise: #4a5c6e;
-      --ombre-elegante: 0 18px 35px -12px rgba(7, 59, 76, 0.15);
+      --ombre-elegante: 0 18px 35px -12px rgba(7,59,76,0.15);
       --rayon-card: 28px;
-      --rayon-badge: 60px;
     }
-
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Inter', sans-serif;
       background: radial-gradient(circle at 10% 30%, #f9fcff, #e9f2f5);
       color: #1e2f3e;
       padding: 30px 24px;
       line-height: 1.5;
     }
+    .container { max-width: 1600px; margin: 0 auto; }
 
-    .container {
-      max-width: 1600px;
-      margin: 0 auto;
-    }
-
-    /* --------------------------------
-       MASTHEAD – PRESTIGE
-    -------------------------------- */
+    /* ========== MASTHEAD ========== */
     .masthead {
       background: linear-gradient(145deg, var(--nuit-profonde), #0e4d5a, var(--teal-lumiere));
       padding: 42px 48px;
@@ -56,19 +38,17 @@
       position: relative;
       overflow: hidden;
     }
-
     .masthead::before {
       content: "✦ ✦ ✦";
       position: absolute;
       bottom: -15px;
       right: 30px;
       font-size: 140px;
-      color: rgba(255, 255, 255, 0.06);
+      color: rgba(255,255,255,0.06);
       font-weight: 900;
       letter-spacing: 20px;
       transform: rotate(-6deg);
     }
-
     .masthead-content {
       display: flex;
       align-items: center;
@@ -77,465 +57,182 @@
       position: relative;
       z-index: 5;
     }
-
     .embleme {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255,255,255,0.1);
       backdrop-filter: blur(8px);
-      width: 110px;
-      height: 110px;
+      width: 110px; height: 110px;
       border-radius: 38px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 2px solid rgba(255, 255, 255, 0.28);
-      box-shadow: 0 12px 18px -10px rgba(0,0,0,0.2);
+      border: 2px solid rgba(255,255,255,0.28);
     }
-
-    .embleme i {
-      font-size: 52px;
-      color: white;
-      text-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
+    .embleme i { font-size: 52px; color: white; }
     .masthead-text h1 {
-      font-size: 44px;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: white;
-      text-shadow: 0 4px 12px rgba(0, 20, 30, 0.3);
+      font-size: 44px; font-weight: 800; letter-spacing: -0.02em;
+      color: white; text-shadow: 0 4px 12px rgba(0,20,30,0.3);
       margin-bottom: 12px;
     }
-
-    .masthead-text p {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
+    .masthead-text p { display: flex; gap: 18px; flex-wrap: wrap; }
     .tag {
-      background: rgba(255, 255, 255, 0.16);
+      background: rgba(255,255,255,0.16);
       backdrop-filter: blur(4px);
-      padding: 10px 26px;
-      border-radius: 60px;
-      font-weight: 600;
-      font-size: 16px;
-      color: white;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
+      padding: 10px 26px; border-radius: 60px;
+      font-weight: 600; font-size: 16px; color: white;
+      border: 1px solid rgba(255,255,255,0.3);
+      display: inline-flex; align-items: center; gap: 10px;
     }
 
-    .tag i {
-      font-size: 15px;
-    }
-
-    /* --------------------------------
-       STATISTIQUES DE LUXE
-    -------------------------------- */
+    /* ========== STATISTIQUES ========== */
     .stat-panel {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 22px;
+      display: flex; flex-wrap: wrap; gap: 22px;
       margin: 40px 0 32px;
     }
-
     .stat-bloc {
-      background: var(--blanc-casse);
-      border-radius: 24px;
-      padding: 22px 30px;
-      display: flex;
-      align-items: center;
-      gap: 22px;
-      flex: 1 1 180px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.02);
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(2px);
+      background: var(--blanc-casse); border-radius: 24px;
+      padding: 22px 30px; display: flex; align-items: center; gap: 22px;
+      flex: 1 1 180px; box-shadow: 0 8px 22px rgba(0,0,0,0.02);
+      border: 1px solid rgba(255,255,255,0.6); backdrop-filter: blur(2px);
       transition: all 0.2s;
     }
-
-    .stat-bloc:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 24px 35px -12px rgba(17, 100, 102, 0.14);
-    }
-
+    .stat-bloc:hover { transform: translateY(-5px); box-shadow: 0 24px 35px -12px rgba(17,100,102,0.14); }
     .stat-icone {
       background: linear-gradient(145deg, var(--teal-royal), #148c8c);
-      width: 68px;
-      height: 68px;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 32px;
+      width: 68px; height: 68px; border-radius: 20px;
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 32px;
     }
+    .stat-chiffre h3 { font-size: 30px; font-weight: 800; color: var(--nuit-profonde); line-height: 1.1; }
+    .stat-chiffre span { font-size: 15px; font-weight: 500; color: var(--gris-ardoise); letter-spacing: 0.3px; }
 
-    .stat-chiffre h3 {
-      font-size: 30px;
-      font-weight: 800;
-      color: var(--nuit-profonde);
-      line-height: 1.1;
-    }
-
-    .stat-chiffre span {
-      font-size: 15px;
-      font-weight: 500;
-      color: var(--gris-ardoise);
-      letter-spacing: 0.3px;
-    }
-
-    /* --------------------------------
-       BANNIÈRES D'INFORMATION
-    -------------------------------- */
+    /* ========== ALERTES ========== */
     .alerte-duo {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin-bottom: 40px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px;
     }
-
     .alerte-carte {
-      background: white;
-      border-radius: 22px;
-      padding: 24px 28px;
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-      box-shadow: 0 5px 16px rgba(0,0,0,0.02);
-      border-left: 8px solid;
+      background: white; border-radius: 22px; padding: 24px 28px;
+      display: flex; align-items: flex-start; gap: 20px;
+      box-shadow: 0 5px 16px rgba(0,0,0,0.02); border-left: 8px solid;
     }
+    .alerte-carte.weekend { border-left-color: #c0552b; }
+    .alerte-carte.ramadan { border-left-color: #1b7e6b; }
+    .alerte-icone { font-size: 36px; }
+    .alerte-carte.weekend .alerte-icone { color: #c0552b; }
+    .alerte-carte.ramadan .alerte-icone { color: #1b7e6b; }
+    .alerte-texte h5 { font-size: 20px; font-weight: 700; margin-bottom: 6px; color: #1f3a48; }
+    .alerte-texte p { color: #4d6272; font-size: 15px; }
 
-    .alerte-carte.weekend {
-      border-left-color: #c0552b;
-    }
-
-    .alerte-carte.ramadan {
-      border-left-color: #1b7e6b;
-    }
-
-    .alerte-icone {
-      font-size: 36px;
-    }
-
-    .alerte-carte.weekend .alerte-icone {
-      color: #c0552b;
-    }
-
-    .alerte-carte.ramadan .alerte-icone {
-      color: #1b7e6b;
-    }
-
-    .alerte-texte h5 {
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 6px;
-      color: #1f3a48;
-    }
-
-    .alerte-texte p {
-      color: #4d6272;
-      font-size: 15px;
-    }
-
-    /* --------------------------------
-       GRILLE DES GROUPES – CARTES CRISTAL
-    -------------------------------- */
+    /* ========== GRILLE DES GROUPES ========== */
     .grille-groupes {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-      gap: 32px;
-      margin-top: 15px;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 32px; margin-top: 15px;
     }
-
     .carte-groupe {
-      background: var(--blanc-casse);
-      border-radius: 32px;
-      box-shadow: 0 18px 35px -10px rgba(7, 59, 76, 0.1);
-      transition: all 0.25s cubic-bezier(0.2,0,0,1);
-      display: flex;
-      flex-direction: column;
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(4px);
+      background: var(--blanc-casse); border-radius: 32px;
+      box-shadow: 0 18px 35px -10px rgba(7,59,76,0.1);
+      transition: all 0.25s; display: flex; flex-direction: column;
+      border: 1px solid rgba(255,255,255,0.6); backdrop-filter: blur(4px);
     }
-
-    .carte-groupe:hover {
-      transform: translateY(-9px);
-      box-shadow: 0 30px 48px -14px rgba(17, 100, 102, 0.22);
-    }
-
+    .carte-groupe:hover { transform: translateY(-9px); box-shadow: 0 30px 48px -14px rgba(17,100,102,0.22); }
     .entete-groupe {
       background: linear-gradient(105deg, #146b6e, #0f8a8c);
-      padding: 26px 28px;
-      border-radius: 32px 32px 0 0;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
+      padding: 26px 28px; border-radius: 32px 32px 0 0; color: white;
+      display: flex; justify-content: space-between; align-items: center; position: relative;
     }
-
     .entete-groupe::after {
-      content: "◈ ◈ ◈";
-      position: absolute;
-      bottom: 12px;
-      right: 28px;
-      font-size: 12px;
-      letter-spacing: 6px;
-      opacity: 0.5;
-      color: rgba(255,255,255,0.7);
+      content: "◈ ◈ ◈"; position: absolute; bottom: 12px; right: 28px;
+      font-size: 12px; letter-spacing: 6px; opacity: 0.5; color: rgba(255,255,255,0.7);
     }
-
-    .identite {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .nom-groupe {
-      font-size: 28px;
-      font-weight: 800;
-      line-height: 1;
-    }
-
-    .badges-groupe {
-      display: flex;
-      gap: 12px;
-      font-size: 13.5px;
-      font-weight: 500;
-    }
-
+    .identite { display: flex; flex-direction: column; gap: 8px; }
+    .nom-groupe { font-size: 28px; font-weight: 800; line-height: 1; }
+    .badges-groupe { display: flex; gap: 12px; font-size: 13.5px; font-weight: 500; }
     .badges-groupe span {
-      background: rgba(255, 255, 255, 0.16);
-      padding: 6px 18px;
-      border-radius: 40px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      backdrop-filter: blur(2px);
+      background: rgba(255,255,255,0.16); padding: 6px 18px; border-radius: 40px;
+      display: inline-flex; align-items: center; gap: 6px; backdrop-filter: blur(2px);
     }
-
     .statut {
-      background: rgba(255, 255, 255, 0.2);
-      padding: 8px 24px;
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      border: 1px solid rgba(255, 255, 255, 0.4);
+      background: rgba(255,255,255,0.2); padding: 8px 24px; border-radius: 50px;
+      font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 1.2px;
+      border: 1px solid rgba(255,255,255,0.4);
     }
+    .statut.en-cours { background: #d8822a; border: none; }
+    .statut.a-venir { background: #0e7a6e; border: none; }
 
-    .statut.en-cours {
-      background: #d8822a;
-      border: none;
-    }
-
-    .statut.a-venir {
-      background: #0e7a6e;
-      border: none;
-    }
-
-    /* tableau des sessions */
-    .tableau-seances {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .tableau-seances td {
-      padding: 18px 22px;
-      border-bottom: 1px solid #ecf3f5;
-      vertical-align: top;
-    }
-
-    .tableau-seances tr:last-child td {
-      border-bottom: none;
-    }
-
+    /* tableau des séances */
+    .tableau-seances { width: 100%; border-collapse: collapse; }
+    .tableau-seances td { padding: 18px 22px; border-bottom: 1px solid #ecf3f5; vertical-align: top; }
+    .tableau-seances tr:last-child td { border-bottom: none; }
     .badge-seance {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      border-radius: 16px;
-      font-weight: 800;
-      font-size: 16px;
-      color: white;
-      box-shadow: 0 8px 14px -8px rgba(0,0,0,0.2);
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; border-radius: 16px; font-weight: 800; font-size: 16px;
+      color: white; box-shadow: 0 8px 14px -8px rgba(0,0,0,0.2);
     }
-
     .s1 { background: #2a73ff; }
     .s2 { background: #8a5cf5; }
     .s3 { background: #0fa38f; }
     .s4 { background: #e68a2e; }
     .s5 { background: #e34f4f; }
 
-    .detail-seance {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
+    .detail-seance { display: flex; flex-direction: column; gap: 6px; }
     .jour {
-      font-weight: 700;
-      color: #0a4045;
-      font-size: 16px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      font-weight: 700; color: #0a4045; font-size: 16px;
+      display: flex; align-items: center; gap: 8px;
     }
-
     .heure {
-      font-size: 14.5px;
-      color: #1e727a;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      font-size: 14.5px; color: #1e727a; font-weight: 600;
+      display: flex; align-items: center; gap: 6px;
     }
-
     .salle-tag {
-      background: #e0f0f2;
-      color: #0b595e;
-      padding: 6px 18px;
-      border-radius: 50px;
-      font-size: 12.5px;
-      font-weight: 700;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      width: fit-content;
-      border: 1px solid #add3d6;
+      background: #e0f0f2; color: #0b595e; padding: 6px 18px; border-radius: 50px;
+      font-size: 12.5px; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;
+      width: fit-content; border: 1px solid #add3d6;
     }
-
     .note {
-      display: inline-block;
-      font-size: 11.5px;
-      font-weight: 700;
-      padding: 4px 16px;
-      border-radius: 60px;
-      margin-top: 6px;
+      display: inline-block; font-size: 11.5px; font-weight: 700; padding: 4px 16px;
+      border-radius: 60px; margin-top: 6px;
     }
+    .note.ramadan { background: #fce7d6; color: #a1451a; border: 1px solid #ffaa7a; }
+    .note.correction { background: #def0ec; color: #14655e; border: 1px solid #68bcb3; }
+    .note.duree { background: #fff3cd; color: #856404; border: 1px solid #ffd970; }
 
-    .note.ramadan {
-      background: #fce7d6;
-      color: #a1451a;
-      border: 1px solid #ffaa7a;
-    }
-
-    .note.correction {
-      background: #def0ec;
-      color: #14655e;
-      border: 1px solid #68bcb3;
-    }
-
-    /* --------------------------------
-       FOOTER PRESTIGE
-    -------------------------------- */
+    /* ========== FOOTER ========== */
     .footer-prestige {
-      background: white;
-      margin-top: 60px;
-      padding: 38px 44px;
-      border-radius: 38px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.02);
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      border: 1px solid rgba(0,0,0,0.02);
+      background: white; margin-top: 60px; padding: 38px 44px; border-radius: 38px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.02); display: flex; flex-wrap: wrap;
+      align-items: center; justify-content: space-between; border: 1px solid rgba(0,0,0,0.02);
     }
-
-    .footer-brand {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
+    .footer-brand { display: flex; align-items: center; gap: 20px; }
     .footer-icon {
       background: linear-gradient(145deg, var(--nuit-profonde), var(--teal-royal));
-      width: 70px;
-      height: 70px;
-      border-radius: 22px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 32px;
+      width: 70px; height: 70px; border-radius: 22px; display: flex; align-items: center;
+      justify-content: center; color: white; font-size: 32px;
     }
+    .footer-brand-text h4 { font-size: 22px; font-weight: 800; color: var(--nuit-profonde); }
+    .footer-brand-text p { color: #53737e; font-size: 15px; }
+    .contact-list { display: flex; gap: 28px; color: #2c6672; }
+    .contact-item { display: flex; align-items: center; gap: 8px; font-size: 15px; }
+    .contact-item i { color: var(--teal-royal); }
 
-    .footer-brand-text h4 {
-      font-size: 22px;
-      font-weight: 800;
-      color: var(--nuit-profonde);
-    }
-
-    .footer-brand-text p {
-      color: #53737e;
-      font-size: 15px;
-    }
-
-    .contact-list {
-      display: flex;
-      gap: 28px;
-      color: #2c6672;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 15px;
-    }
-
-    .contact-item i {
-      color: var(--teal-royal);
-    }
-
-    /* --------------------------------
-       BOUTON IMPRESSION FLOTTANT
-    -------------------------------- */
+    /* ========== BOUTON IMPRESSION ========== */
     .print-btn {
-      position: fixed;
-      bottom: 35px;
-      right: 35px;
+      position: fixed; bottom: 35px; right: 35px;
       background: linear-gradient(145deg, #0e5d63, #0a474b);
-      color: white;
-      border: none;
-      padding: 18px 36px;
-      border-radius: 80px;
-      font-weight: 700;
-      font-size: 17px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      box-shadow: 0 18px 35px -6px #0a4a50;
-      cursor: pointer;
-      transition: all 0.2s;
-      border: 1px solid rgba(255,255,255,0.2);
-      z-index: 999;
+      color: white; border: none; padding: 18px 36px; border-radius: 80px;
+      font-weight: 700; font-size: 17px; display: flex; align-items: center; gap: 14px;
+      box-shadow: 0 18px 35px -6px #0a4a50; cursor: pointer; transition: all 0.2s;
+      border: 1px solid rgba(255,255,255,0.2); z-index: 999;
     }
+    .print-btn:hover { background: #083b3f; transform: scale(1.05); box-shadow: 0 24px 48px -8px #052e31; }
 
-    .print-btn:hover {
-      background: #083b3f;
-      transform: scale(1.05);
-      box-shadow: 0 24px 48px -8px #052e31;
-    }
-
-    /* --------------------------------
-       RESPONSIVE & PRINT
-    -------------------------------- */
     @media (max-width: 950px) {
       .alerte-duo { grid-template-columns: 1fr; }
       .masthead-content { flex-direction: column; text-align: center; }
       .footer-prestige { flex-direction: column; gap: 25px; }
       .contact-list { flex-wrap: wrap; justify-content: center; }
     }
-
     @media print {
       body { background: white; padding: 0.4cm; }
-      .masthead, .stat-panel, .print-btn, .footer-prestige, .alerte-duo { 
-        background: white; color: black; box-shadow: none; 
+      .masthead, .stat-panel, .print-btn, .footer-prestige, .alerte-duo {
+        background: white; color: black; box-shadow: none;
       }
       .entete-groupe { background: #ddd; color: black; }
       .badge-seance { border: 1px solid black; background: white !important; color: black; }
@@ -553,15 +250,14 @@
     <!-- EN‑TÊTE MAJESTUEUX -->
     <div class="masthead">
       <div class="masthead-content">
-        <div class="embleme">
-          <i class="fas fa-graduation-cap"></i>
-        </div>
+        <div class="embleme"><i class="fas fa-graduation-cap"></i></div>
         <div class="masthead-text">
           <h1>GROUPES 17–28 · RAMADAN 2026</h1>
           <p>
-            <span class="tag"><i class="fas fa-check-circle"></i> 12 groupes · 650 étudiants</span>
+            <span class="tag"><i class="fas fa-check-circle"></i> 12 groupes · 610 étudiants</span>
             <span class="tag"><i class="fas fa-door-open"></i> Mbambey & Salle 2</span>
-            <span class="tag"><i class="fas fa-calendar-alt"></i> 0 conflit – 0 week‑end</span>
+            <span class="tag"><i class="fas fa-clock"></i> S4=3h / S5=5h</span>
+            <span class="tag"><i class="fas fa-ban"></i> 0 conflit – 0 week‑end</span>
           </p>
         </div>
       </div>
@@ -570,7 +266,7 @@
     <!-- STATISTIQUES DE LUXE -->
     <div class="stat-panel">
       <div class="stat-bloc"><div class="stat-icone"><i class="fas fa-layer-group"></i></div><div class="stat-chiffre"><h3>17–28</h3><span>groupes actifs</span></div></div>
-      <div class="stat-bloc"><div class="stat-icone"><i class="fas fa-clock"></i></div><div class="stat-chiffre"><h3>8h30–12h30</h3><span>matin Ramadan</span></div></div>
+      <div class="stat-bloc"><div class="stat-icone"><i class="fas fa-clock"></i></div><div class="stat-chiffre"><h3>S4=3h / S5=5h</h3><span>durées spécifiques</span></div></div>
       <div class="stat-bloc"><div class="stat-icone"><i class="fas fa-calendar-times"></i></div><div class="stat-chiffre"><h3>week‑end</h3><span>aucun cours</span></div></div>
       <div class="stat-bloc"><div class="stat-icone"><i class="fas fa-ban"></i></div><div class="stat-chiffre"><h3>0 Absence</h3><span>tolérée</span></div></div>
     </div>
@@ -579,15 +275,15 @@
     <div class="alerte-duo">
       <div class="alerte-carte weekend">
         <div class="alerte-icone"><i class="fas fa-ban"></i></div>
-        <div class="alerte-texte"><h5>❌ Week‑end totalement libre</h5></div>
+        <div class="alerte-texte"><h5>Planning par groupe</h5></div>
       </div>
       <div class="alerte-carte ramadan">
         <div class="alerte-icone"><i class="fas fa-moon"></i></div>
-        <div class="alerte-texte"><h5>🌙 Ramadan – matin uniquement</h5><p>À partir du 18/02 : tous les créneaux en matinée (8h30–12h30).</p></div>
+        <div class="alerte-texte"><h5>🌙 Ramadan – matin (8h30‑12h30)</h5><p>Sessions S5 (5h): 8h30‑13h30 • S4 (3h) : 8h30‑11h30</p></div>
       </div>
     </div>
 
-    <!-- ========== GRILLE DES 12 GROUPES – PLANNING OFFICIEL SANS CONFLIT ========== -->
+    <!-- ========== GRILLE DES 12 GROUPES – AVEC DURÉES S4=3H / S5=5H ========== -->
     <div class="grille-groupes">
 
       <!-- GROUPE 17 – Mbambey -->
@@ -603,8 +299,8 @@
           <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour"><i class="far fa-calendar"></i> Lundi 09/02</span><span class="heure"><i class="far fa-clock"></i> 8h30–12h30</span><span class="salle-tag"><i class="fas fa-door-open"></i> Mbambey</span></div></td></tr>
           <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour"><i class="far fa-calendar"></i> Mercredi 11/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span></div></td></tr>
           <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour"><i class="far fa-calendar"></i> Vendredi 13/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span></div></td></tr>
-          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour"><i class="far fa-calendar"></i> Mardi 17/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span></div></td></tr>
-          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour"><i class="far fa-calendar"></i> Lundi 23/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note correction">✓</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour"><i class="far fa-calendar"></i> Mardi 17/02</span><span class="heure">8h30–11h30</span><span class="salle-tag">Mbambey</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour"><i class="far fa-calendar"></i> Lundi 23/02</span><span class="heure">8h30–13h30</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ </span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 5h</span></div></td></tr>
         </table>
       </div>
 
@@ -618,8 +314,8 @@
           <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Lundi 09/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span></div></td></tr>
           <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Mercredi 11/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span></div></td></tr>
           <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Vendredi 13/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span></div></td></tr>
-          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Mardi 17/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span></div></td></tr>
-          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Jeudi 26/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note correction">✓</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Mardi 17/02</span><span class="heure">8h30–11h30</span><span class="salle-tag">Salle 2</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Jeudi 26/02</span><span class="heure">8h30–13h30</span><span class="salle-tag">Salle 2</span><span class="note correction">✓ </span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 5h</span></div></td></tr>
         </table>
       </div>
 
@@ -630,11 +326,11 @@
           <div class="statut en-cours">En cours</div>
         </div>
         <table class="tableau-seances">
-          <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Lundi 09/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Mbambey</span></div></td></tr>
-          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Mercredi 11/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Mbambey</span></div></td></tr>
-          <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Vendredi 13/02</span><span class="heure">15h00–19h00</span><span class="salle-tag">Mbambey</span></div></td></tr>
-          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Jeudi 12/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ </span></div></td></tr>
-          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 18/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Lundi 09/02</span><span class="heure">14h00–17h00</span><span class="salle-tag">Mbambey</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Mercredi 11/02</span><span class="heure">14h00–17h00</span><span class="salle-tag">Mbambey</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Vendredi 13/02</span><span class="heure">15h00–18h00</span><span class="salle-tag">Mbambey</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Lundi 16/02</span><span class="heure">8h30–11h30</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ </span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 18/02</span><span class="heure">8h30–13h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 5h</span></div></td></tr>
         </table>
       </div>
 
@@ -645,11 +341,11 @@
           <div class="statut en-cours">En cours</div>
         </div>
         <table class="tableau-seances">
-          <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Lundi 09/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Salle 2</span></div></td></tr>
-          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Mercredi 11/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Salle 2</span></div></td></tr>
-          <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Vendredi 13/02</span><span class="heure">15h00–19h00</span><span class="salle-tag">Salle 2</span></div></td></tr>
-          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Jeudi 12/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Salle 2</span><span class="note correction">✓ </span></div></td></tr>
-          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 18/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Lundi 09/02</span><span class="heure">14h00–17h00</span><span class="salle-tag">Salle 2</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Mercredi 11/02</span><span class="heure">14h00–17h00</span><span class="salle-tag">Salle 2</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Vendredi 13/02</span><span class="heure">15h00–18h00</span><span class="salle-tag">Salle 2</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Lundi 16/02</span><span class="heure">8h30–11h30</span><span class="salle-tag">Salle 2</span><span class="note correction">✓ </span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 18/02</span><span class="heure">8h30–13h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 5h</span></div></td></tr>
         </table>
       </div>
 
@@ -662,9 +358,9 @@
         <table class="tableau-seances">
           <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Mardi 10/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span></div></td></tr>
           <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Jeudi 12/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ </span></div></td></tr>
-          <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Lundi 16/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ </span></div></td></tr>
-          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Jeudi 19/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mardi 24/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note correction">✓</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Lundi 16/02</span><span class="heure">14h00–17h00</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ </span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Jeudi 19/02</span><span class="heure">8h30–11h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mardi 24/02</span><span class="heure">8h30–13h30</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ </span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 5h</span></div></td></tr>
         </table>
       </div>
 
@@ -676,10 +372,10 @@
         </div>
         <table class="tableau-seances">
           <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Mardi 10/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span></div></td></tr>
-          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Jeudi 12/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note correction">✓</span></div></td></tr>
-          <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Lundi 16/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Salle 2</span><span class="note correction">✓ </span></div></td></tr>
-          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Mercredi 19/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mardi 24/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note correction">✓</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Jeudi 12/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note correction">✓ </span></div></td></tr>
+          <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Lundi 16/02</span><span class="heure">14h00–17h00</span><span class="salle-tag">Salle 2</span><span class="note correction">✓ </span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Jeudi 19/02</span><span class="heure">8h30–11h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mardi 24/02</span><span class="heure">8h30–13h30</span><span class="salle-tag">Salle 2</span><span class="note correction">✓ </span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 5h</span></div></td></tr>
         </table>
       </div>
 
@@ -690,11 +386,11 @@
           <div class="statut en-cours">En cours</div>
         </div>
         <table class="tableau-seances">
-          <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Mardi 10/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Mbambey</span></div></td></tr>
-          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Jeudi 12/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ </span></div></td></tr>
-          <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Mardi 17/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ </span></div></td></tr>
-          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Vendredi 20/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 25/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Mardi 10/02</span><span class="heure">14h00–17h00</span><span class="salle-tag">Mbambey</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Jeudi 12/02</span><span class="heure">14h00–17h00</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ </span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Mardi 17/02</span><span class="heure">14h00–17h00</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ </span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Vendredi 20/02</span><span class="heure">8h30–11h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 25/02</span><span class="heure">8h30–13h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 5h</span></div></td></tr>
         </table>
       </div>
 
@@ -705,11 +401,11 @@
           <div class="statut en-cours">En cours</div>
         </div>
         <table class="tableau-seances">
-          <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Mardi 10/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Salle 2</span></div></td></tr>
-          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Jeudi 12/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Salle 2</span><span class="note correction">✓ </span></div></td></tr>
-          <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Mardi 17/02</span><span class="heure">14h00–18h00</span><span class="salle-tag">Salle 2</span><span class="note correction">✓ </span></div></td></tr>
-          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Vendredi 20/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 25/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Mardi 10/02</span><span class="heure">14h00–17h00</span><span class="salle-tag">Salle 2</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Jeudi 12/02</span><span class="heure">14h00–17h00</span><span class="salle-tag">Salle 2</span><span class="note correction">✓ </span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Mardi 17/02</span><span class="heure">14h00–17h00</span><span class="salle-tag">Salle 2</span><span class="note correction">✓ </span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Vendredi 20/02</span><span class="heure">8h30–11h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 25/02</span><span class="heure">8h30–13h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 5h</span></div></td></tr>
         </table>
       </div>
 
@@ -720,11 +416,11 @@
           <div class="statut a-venir">À venir</div>
         </div>
         <table class="tableau-seances">
-          <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Mardi 26/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ Décalé</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Jeudi 27/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Jeudi 26/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ </span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Vendredi 27/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
           <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Lundi 02/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Mardi 03/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 04/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Mardi 03/03</span><span class="heure">8h30–11h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 04/03</span><span class="heure">8h30–13h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 5h</span></div></td></tr>
         </table>
       </div>
 
@@ -736,25 +432,25 @@
         </div>
         <table class="tableau-seances">
           <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Lundi 23/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Mercredi 25/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note correction">✓ Décalé</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Mercredi 25/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note correction">✓ </span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
           <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Vendredi 27/02</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Lundi 02/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 04/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Lundi 02/03</span><span class="heure">8h30–11h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 04/03</span><span class="heure">8h30–13h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 5h</span></div></td></tr>
         </table>
       </div>
 
       <!-- GROUPE 27 – Mbambey -->
       <div class="carte-groupe">
         <div class="entete-groupe">
-          <div class="identite"><span class="nom-groupe">Groupe 27</span><div class="badges-groupe"><span>50</span><span>Mbambey</span></div></div>
+          <div class="identite"><span class="nom-groupe">Groupe 27</span><div class="badges-groupe"><span>10</span><span>Mbambey</span></div></div>
           <div class="statut a-venir">À venir</div>
         </div>
         <table class="tableau-seances">
-          <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Jeudi 05/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ Décalé</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Jeudi 05/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note correction">✓ </span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
           <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Vendredi 06/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
           <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Lundi 09/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Mardi 10/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 11/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Mardi 10/03</span><span class="heure">8h30–11h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Mercredi 11/03</span><span class="heure">8h30–13h30</span><span class="salle-tag">Mbambey</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 5h</span></div></td></tr>
         </table>
       </div>
 
@@ -768,8 +464,8 @@
           <tr><td><span class="badge-seance s1">S1</span></td><td><div class="detail-seance"><span class="jour">Vendredi 06/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
           <tr><td><span class="badge-seance s2">S2</span></td><td><div class="detail-seance"><span class="jour">Lundi 09/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
           <tr><td><span class="badge-seance s3">S3</span></td><td><div class="detail-seance"><span class="jour">Mercredi 11/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Vendredi 13/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
-          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Lundi 16/03</span><span class="heure">8h30–12h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span></div></td></tr>
+          <tr><td><span class="badge-seance s4">S4</span></td><td><div class="detail-seance"><span class="jour">Vendredi 13/03</span><span class="heure">8h30–11h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 3h</span></div></td></tr>
+          <tr><td><span class="badge-seance s5">S5</span></td><td><div class="detail-seance"><span class="jour">Lundi 16/03</span><span class="heure">8h30–13h30</span><span class="salle-tag">Salle 2</span><span class="note ramadan">🌙 Ramadan</span><span class="note duree">⏱️ 5h</span></div></td></tr>
         </table>
       </div>
     </div> <!-- fin grille-groupes -->
@@ -792,13 +488,8 @@
 
     <!-- LIGNE DE CERTIFICATION -->
     <p style="text-align: center; margin-top: 28px; color: #376d78; font-size: 15px; font-weight: 500; letter-spacing: 0.5px;">
-      ⸻  Groupes 1–16 : cours terminés  ·  12 groupes actifs  ·  Zéro conflit  ·  Zéro week‑end  ⸻
+      ⸻  Groupes 1–16 : cours terminés  ·  12 groupes actifs  ·  S4=3h / S5=5h  ⸻
     </p>
   </div> <!-- fin container -->
 </body>
 </html>
-
-
-
-
-
